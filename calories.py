@@ -23,9 +23,13 @@ def preprocess_image(img):
 
 # Function to load and clean the food dataset (local CSV file)
 def load_food_dataset():
-    dataset = pd.read_csv(r'C:\Users\Megha\OneDrive\Desktop\nutrients.csv')
+    dataset = pd.read_csv(r'nutrients.csv', encoding='latin1')
+
+
+
+    # Drop unnecessary columns
+    dataset = dataset.drop(columns=['Unnamed: 0'], errors='ignore')
     
-    # Clean and convert columns to numeric values
     dataset['Calories'] = dataset['Calories'].replace({'cal': ''}, regex=True)
     dataset['Calories'] = pd.to_numeric(dataset['Calories'], errors='coerce').fillna(0)
     dataset['Grams'] = pd.to_numeric(dataset['Grams'], errors='coerce').fillna(0)
