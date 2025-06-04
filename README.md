@@ -1,13 +1,13 @@
-#🥗 AI Food Calorie Estimator
+# 🥗 AI Food Calorie Estimator
 
 An AI-powered web application built with Streamlit, TensorFlow, and Plotly to identify food items from images and estimate their nutritional values. It also visualizes nutritional insights from a curated food dataset.
 
-##📸 Features
+## 📸 Features
 🍕 Image-Based Food Identification using EfficientNetB0 (ImageNet pre-trained).
 
 🔬 Nutritional Estimation from a custom CSV dataset (nutrients.csv).
 
-##📊 Dynamic Visualizations:
+## 📊 Dynamic Visualizations:
 
 Nutritional pie chart for identified food
 
@@ -21,14 +21,14 @@ Boxen plot of calories by food category
 
 🗣️ User Feedback Section to collect feedback
 
-##🧠 Model Used
+## 🧠 Model Used
 EfficientNetB0 (Keras Applications)
 
 Pre-trained on ImageNet
 
 Used for top-1 prediction from uploaded food images
 
-##📁 Dataset
+## 📁 Dataset
 Custom CSV file: nutrients.csv
 
 Contains:
@@ -41,12 +41,12 @@ Nutritional values: Calories, Protein, Fat, Saturated Fat, Fiber, Carbs
 
 Grams and measure information
 
-##📈 Visualizations
+## 📈 Visualizations
 Chart	Description
 🍩 Pie Chart	Nutritional breakdown of the identified food
 📉 Bar Charts	Top 20 calorie and fat-rich foods
 🧮 3D Plot	Carbohydrate content vs category
 📦 Boxen Plot	Calorie distribution across food categories
 
-##📜 License
+## 📜 License
 MIT License
