@@ -1,19 +1,51 @@
-The AI Food Calorie Estimator is a Streamlit-based web application that estimates the nutritional content of food items using image recognition and a pre-trained deep learning model (EfficientNetB0). The app also provides detailed nutritional information based on a local dataset of food items and visualizes the top calorie-rich foods, carbohydrate-rich foods, and category-wise calorie distribution.
+🥗 AI Food Calorie Estimator
+An AI-powered web application built with Streamlit, TensorFlow, and Plotly to identify food items from images and estimate their nutritional values. It also visualizes nutritional insights from a curated food dataset.
 
+📸 Features
+🍕 Image-Based Food Identification using EfficientNetB0 (ImageNet pre-trained).
 
-## Features
+🔬 Nutritional Estimation from a custom CSV dataset (nutrients.csv).
 
-- **Image-Based Food Identification**:  
-  Upload a food image, and the app will classify the food item using the **EfficientNetB0** model pre-trained on **ImageNet**.
+📊 Dynamic Visualizations:
 
-- **Nutritional Breakdown**:  
-  Provides detailed nutritional information including **calories**, **protein**, **fat**, **carbs**, and other nutrients for the identified food item, based on a local dataset.
+Nutritional pie chart for identified food
 
-- **Visualizations**:
-  - **Pie Chart**: Displays the nutritional breakdown of the identified food item.
-  - **Bar Chart**: Shows the top 20 calorie-rich foods from the dataset.
-  - **3D Scatter Plot**: Visualizes carbohydrate-rich foods by category.
-  - **Boxen Plot**: Represents the calorie content distribution by food category.
+Top 20 calorie-rich foods bar chart
 
-- **User Feedback**:  
-  Users can submit feedback on the identified food and its nutritional content.
+Top 20 fat content vs calories chart
+
+3D scatter plot of carbohydrate-rich foods
+
+Boxen plot of calories by food category
+
+🗣️ User Feedback Section to collect feedback
+
+🧠 Model Used
+EfficientNetB0 (Keras Applications)
+
+Pre-trained on ImageNet
+
+Used for top-1 prediction from uploaded food images
+
+📁 Dataset
+Custom CSV file: nutrients.csv
+
+Contains:
+
+Food name
+
+Category
+
+Nutritional values: Calories, Protein, Fat, Saturated Fat, Fiber, Carbs
+
+Grams and measure information
+
+📈 Visualizations
+Chart	Description
+🍩 Pie Chart	Nutritional breakdown of the identified food
+📉 Bar Charts	Top 20 calorie and fat-rich foods
+🧮 3D Plot	Carbohydrate content vs category
+📦 Boxen Plot	Calorie distribution across food categories
+
+📜 License
+MIT License
